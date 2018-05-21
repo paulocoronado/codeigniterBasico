@@ -17,4 +17,16 @@ class Ruta extends CI_Model{
             return $query->result_array();
         }
     }
+    
+    public function insertarRuta($data = array()) {
+        
+        $data['id']='NULL';
+        $insertar = $this->db->insert('ruta', $data);
+        
+        if($insertar){
+            return $this->db->insert_id();
+        }else{
+            return false;
+        }
+    }
 }

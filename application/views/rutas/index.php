@@ -20,9 +20,11 @@
                             <td><?php echo $ruta['id']; ?></td>
                             <td><?php echo $ruta['nombre']; ?></td>
                         </tr>
-                    </tbody>
-                </table>
                             <?php }
                         }?>
+                    
+                    </tbody>
+                </table>
+    <a href="<?php echo site_url('Procesador/agregar')?>">Agregar Ruta</a>
 </body>
 </html>
